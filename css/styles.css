@@ -93,13 +93,21 @@ a,a:hover{
 /* header styles */
 
 header{
-    background-color: var(--devc-color-bg-secondary);
     height: 70px;
-    color: var(--devc-color-font-primary);
     padding: 20px;
     display: flex;
     align-items: center;
 
+}
+
+.devc-header-admin{
+    background-color: var(--devc-color-bg-admin);
+    color: var(--devc-color-font-tertiary);
+}
+
+.devc-header-client{
+    background-color: var(--devc-color-bg-secondary);
+    color: var(--devc-color-font-primary);
 }
 
 input::-webkit-outer-spin-button,

@@ -1,10 +1,5 @@
 @import url('./styles.css');
 
-header{
-    background-color: var(--devc-color-bg-admin);
-    color: var(--devc-color-font-tertiary);
-}
-
 .devc-product-listing-img{
     width: 70px;
 }
