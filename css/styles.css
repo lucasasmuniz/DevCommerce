@@ -19,10 +19,7 @@
     --devc-color-font-primary: #636363;
     --devc-color-font-secondary: #0caf1d;
     --devc-color-font-tertiary: #fff;
-    --devc-color-font-search-bar: #D9D9D9;
-    --devc-color-font-input-bar: #D9D9D9;
-
-    --devc-color-border-search-bar: #D9D9D9;
+    --devc-color-font-placeholder: #D9D9D9;
 
     --devc-color-input-border: #d9d9d9;
     ---devc-color-input-error: #FF3333;
@@ -73,6 +70,24 @@ a,a:hover{
 .devc-cursor-click{
     cursor: pointer;
 }
+
+.devc-section-title{
+    font-size: 16px;
+    color: var(--devc-color-font-primary);
+    text-align: center;
+    font-weight: bold;
+}
+
+.dsc-txt-left{
+    text-align: left;
+}
+
+@media(min-width:576px){
+    .devc-section-title{
+        text-align: left;
+    }
+}
+
 /* ------------- */
 /* header styles */
 
@@ -244,7 +259,7 @@ main{
 }
 
 .devc-search-bar button, .devc-search-bar input{
-    border: 1px solid var(--devc-color-border-search-bar);
+    border: 1px solid var(--devc-color-input-border);
 }
 
 .devc-search-bar button{
@@ -281,6 +296,18 @@ main{
     border-radius: 0 4px 4px 0;
 }
 
+@media(min-width: 576px){
+    html,body{
+        font-size: 24px
+    }
+    .devc-btn-container{
+        width: 220px;
+    }
+    .devc-item-nav-name-admin{
+        display: block;
+    }
+}
+
 /* ------------- */
 /* form styles */
 
@@ -305,11 +332,11 @@ main{
 }
 
 .devc-form-input::placeholder{
-    color: var(--devc-color-font-input-bar);
+    color: var(--devc-color-font-placeholder);
 }
 
 .devc-select:invalid{
-    color: var(--devc-color-font-input-bar);
+    color: var(--devc-color-font-placeholder);
 }
 
 .devc-select option[disabled]{
@@ -326,14 +353,30 @@ main{
     padding-top: 10px;
 }
 
-@media(min-width: 576px){
-    html,body{
-        font-size: 24px
-    }
-    .devc-btn-container{
-        width: 220px;
-    }
-    .devc-item-nav-name-admin{
-        display: block;
-    }
+/* ------------- */
+/* Table styles */
+
+.devc-table{
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.devc-table thead{
+    height: 55px;
+    font-size: 14px;
+    color: var(--devc-color-font-primary);
+    background-color: var(--devc-color-card-bg);
+    border-radius: 0 5px 5px 0;
+}
+
+.devc-table tbody{
+    text-align: center;
+    font-size: 12px;
+    color: var(--devc-color-font-primary);
+    background-color: var(--devc-color-card-bg);
+}
+
+.devc-table tbody tr{
+    border-top: 1px solid var(--devc-color-card-border);
 }
