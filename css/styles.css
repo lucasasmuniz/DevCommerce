@@ -61,6 +61,9 @@ a,a:hover{
     margin-bottom: 20px;
 }
 
+.devc-mt-20{
+    margin-top: 20px;
+}
 /* ------------- */
 /* header styles */
 
@@ -104,6 +107,23 @@ nav div{
     margin-left: 10px;
 }
 
+.devc-user-container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    align-items:end;
+}
+
+.devc-user-container p{
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.devc-user-container h4{
+    cursor: pointer;
+    font-size: 14px;
+}
+
 /* ------------- */
 /* card styles */
 
@@ -137,7 +157,6 @@ main{
 /* button styles */
 
 .devc-btn-container{
-    margin-top: 20px;
     width: 100%;
     display: grid;
     grid-gap: 20px;
