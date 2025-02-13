@@ -4,6 +4,7 @@
     --devc-color-bg-primary: #E8E8E8;
     --devc-color-bg-secondary: #FFE500;
     --devc-color-bg-tertiary: #636363; 
+    --devc-color-bg-admin: #0caf1d;
     
     --devc-color-card-bg: #fff;
     --devc-color-card-border: #d9d9d9;
@@ -64,6 +65,14 @@ a,a:hover{
 .devc-mt-20{
     margin-top: 20px;
 }
+
+.devc-mr-20{
+    margin-right: 20px;
+}
+
+.devc-cursor-click{
+    cursor: pointer;
+}
 /* ------------- */
 /* header styles */
 
@@ -75,6 +84,12 @@ header{
     display: flex;
     align-items: center;
 
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 nav{
@@ -121,6 +136,15 @@ nav div{
 
 .devc-user-container h4{
     cursor: pointer;
+    font-size: 14px;
+}
+
+/* ------------- */
+/* header admin styles */
+
+.devc-item-nav-name-admin{
+    display: none;
+    margin-left: 5px;
     font-size: 14px;
 }
 
@@ -284,11 +308,32 @@ main{
     color: var(--devc-color-font-input-bar);
 }
 
+.devc-select:invalid{
+    color: var(--devc-color-font-input-bar);
+}
+
+.devc-select option[disabled]{
+    display: none;
+}
+
+.devc-select option{
+    color: var(--devc-color-font-primary);
+}
+
+.devc-textarea{
+    resize: none;
+    height: 128px;
+    padding-top: 10px;
+}
+
 @media(min-width: 576px){
     html,body{
         font-size: 24px
     }
     .devc-btn-container{
         width: 220px;
+    }
+    .devc-item-nav-name-admin{
+        display: block;
     }
 }

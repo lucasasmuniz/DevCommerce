@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevCommerce</title>
+    <link rel="stylesheet" href="./css/product-form.css">
+</head>
+<body>
+    <header>
+        <nav class="devc-container">
+            <h1>DevCommerce</h1>
+            <div>
+                <div class="devc-cursor-click devc-mr-20">
+                    <img src="./img/home-svgrepo-com 1.svg" alt="Carrinho de compras">
+                    <p class="devc-item-nav-name-admin">Início</p>
+                </div>
+                <div class="devc-cursor-click">
+                    <img src="./img/stock-svgrepo-com 1.svg" alt="Carrinho de compras">
+                    <h4 class="devc-item-nav-name-admin">Produtos</h4>
+                </div>
+                <div class="devc-user-container">
+                    <p>Maria Silva</p>
+                    <h4>Sair</h4>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="product-form-section" class="devc-container devc-pd-top-20">
+            <div class="devc-product-form-container devc-card">
+                <form class="devc-form-product">
+                    <h2>Dados do produto</h2>
+                    <div class="devc-form-control-container">
+                        <div class="devc-form-email-container">
+                            <input class="devc-form-input" type="text" placeholder="Nome">
+                            <div class="devc-form-error"></div>
+                        </div>
+                        <div class="devc-form-price-container">
+                            <input class="devc-form-input" type="number" placeholder="Preço">
+                            <div class="devc-form-error"></div>
+                        </div>
+                        <div class="devc-form-image-container">
+                            <input class="devc-form-input" type="text" placeholder="Imagem">
+                            <div class="devc-form-error"></div>
+                        </div>
+                        <div class="devc-form-category-container">
+                            <select class="devc-select devc-form-input" required>
+                                <option value="" disabled selected>Categorias</option>
+                                <option value="1">Valor1</option>
+                                <option value="2">Valor2</option>
+                            </select>
+                        </div>
+                        <div class="devc-form-description-container">
+                            <textarea class="devc-textarea devc-form-input" placeholder="Descrição"></textarea>
+                        </div>
+                    </div>
+                    <div class="devc-form-btn-container">
+                        <button type="reset" class="devc-btn devc-btn-white">Cancelar</button>
+                        <button type="submit" class="devc-btn devc-btn-blue">Salvar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
